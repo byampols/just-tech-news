@@ -9,7 +9,7 @@ class Post extends Model {
         }).then(() => {
             return Post.findOne({
                 where: {
-                    id: req.body.post_id
+                    id: body.post_id
                 },
                 attributes: ['id', 'post_url', 'title', 'created_at',
             // use raw MySQL aggregate function query to get a count of how many votes the post has and return it under the name `vote_count`
