@@ -13,7 +13,7 @@ async function upvoteClickHandler(event) {
         headers: {'Content-Type': 'application/json'}
     });
 
-    response.ok ? document.location.reload(): alert(response.statusText);
+    response.ok ? document.location.reload() : alert(response.statusText);
 }
 
 document.querySelector('.upvote-btn').addEventListener('click', upvoteClickHandler);
